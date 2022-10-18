@@ -1,35 +1,22 @@
 <template>
   <Layout>
-
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
-    <button class="btn btn-primary">test</button>
-
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="display-1">Start selling <br><span class="text-primary">online</span> now!</h1>
+          <p>Build your own e-commerce website and mobile app in few minutes</p>
+          <g-link to="/dashboard" class="btn btn-primary">Get Started</g-link>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Homepage'
   }
 }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
