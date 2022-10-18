@@ -15,6 +15,8 @@
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
     </p>
 
+    <button class="btn btn-primary">test</button>
+
   </Layout>
 </template>
 

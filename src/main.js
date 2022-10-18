@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import DashboardLayout from '~/layouts/Dashboard.vue'
+import '~/assets/scss/app.scss'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
