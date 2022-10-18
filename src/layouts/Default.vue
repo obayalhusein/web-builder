@@ -1,50 +1,34 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+  <div class="layout-wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <g-link to="/" class="navbar-brand">MakanE</g-link>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <g-link to="/" class="nav-link active" aria-current="page" href="#">Homepage</g-link>
+              </li>
+              <li class="nav-item">
+                <g-link to="/about" class="nav-link" href="#">About</g-link>
+              </li>
+              <li class="nav-item">
+                <g-link to="/login" class="nav-link" href="#">Login</g-link>
+              </li>
+              <li class="nav-item">
+                <g-link to="/register" class="nav-link btn btn-primary text-white" href="#">Start free trail</g-link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <slot/>
+    <main>
+      <slot/>
+    </main>
+    <footer>footer</footer>
   </div>
 </template>
-
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
-
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
-
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
-</style>
