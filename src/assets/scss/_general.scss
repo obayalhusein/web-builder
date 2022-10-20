@@ -25,3 +25,10 @@
 a {
     text-decoration: none;
 }
+
+.btn {
+  &.disabled {
+    background-color: gray !important;
+    border-color: gray !important;
+  }
+}
