@@ -20,6 +20,12 @@ yarn-error.log
 yarn.lock
 /.php_cs.cache
 .php-cs-fixer.cache
+temp
+/temp
+.temp
+/.temp
+src/.temp
+/src/.temp
 
 /public/css/
 /public/js/

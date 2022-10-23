@@ -16,7 +16,7 @@
                 </div>
             </nav>
         </header>
-        <main class="d-flex flex-column justify-content-center">
+        <main class="d-flex flex-column h-100">
             <slot />
         </main>
     </div>

@@ -5,7 +5,7 @@
         <div class="col">
           <h1 class="display-1">Start selling <br><span class="text-primary">online</span> now!</h1>
           <p>Build your own e-commerce website and mobile app in few minutes</p>
-          <g-link to="/dashboard" class="btn btn-primary">Get Started</g-link>
+          <g-link to="/setup/store-category" class="btn btn-primary">Get Started</g-link>
         </div>
         <div class="col"></div>
       </div>

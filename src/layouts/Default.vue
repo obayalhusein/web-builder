@@ -31,7 +31,7 @@
                 <g-link to="/login" class="nav-link">Login</g-link>
               </li>
               <li class="nav-item">
-                <g-link to="/select-plan" class="nav-link btn btn-primary text-white">Start free trail</g-link>
+                <g-link to="/setup/store-category" class="nav-link btn btn-primary text-white">Start free trail</g-link>
               </li>
             </ul>
           </div>
