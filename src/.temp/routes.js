@@ -2,10 +2,11 @@ const c1 = () => import(/* webpackChunkName: "page--src--pages--setup--store-cat
 const c2 = () => import(/* webpackChunkName: "page--src--pages--setup--store-name-vue" */ "/Users/makane/Desktop/web-builder/src/pages/setup/StoreName.vue")
 const c3 = () => import(/* webpackChunkName: "page--src--pages--setup--store-package-vue" */ "/Users/makane/Desktop/web-builder/src/pages/setup/StorePackage.vue")
 const c4 = () => import(/* webpackChunkName: "page--src--pages--setup--store-theme-vue" */ "/Users/makane/Desktop/web-builder/src/pages/setup/StoreTheme.vue")
-const c5 = () => import(/* webpackChunkName: "page--src--pages--dashboard--index-vue" */ "/Users/makane/Desktop/web-builder/src/pages/dashboard/Index.vue")
-const c6 = () => import(/* webpackChunkName: "page--src--pages--about-vue" */ "/Users/makane/Desktop/web-builder/src/pages/About.vue")
-const c7 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/makane/Desktop/web-builder/node_modules/gridsome/app/pages/404.vue")
-const c8 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/makane/Desktop/web-builder/src/pages/Index.vue")
+const c5 = () => import(/* webpackChunkName: "page--src--pages--website--index-vue" */ "/Users/makane/Desktop/web-builder/src/pages/Website/Index.vue")
+const c6 = () => import(/* webpackChunkName: "page--src--pages--dashboard--index-vue" */ "/Users/makane/Desktop/web-builder/src/pages/dashboard/Index.vue")
+const c7 = () => import(/* webpackChunkName: "page--src--pages--about-vue" */ "/Users/makane/Desktop/web-builder/src/pages/About.vue")
+const c8 = () => import(/* webpackChunkName: "page--node-modules--gridsome--app--pages--404-vue" */ "/Users/makane/Desktop/web-builder/node_modules/gridsome/app/pages/404.vue")
+const c9 = () => import(/* webpackChunkName: "page--src--pages--index-vue" */ "/Users/makane/Desktop/web-builder/src/pages/Index.vue")
 
 export default [
   {
@@ -25,26 +26,30 @@ export default [
     component: c4
   },
   {
-    path: "/dashboard/",
+    path: "/website/",
     component: c5
   },
   {
-    path: "/about/",
+    path: "/dashboard/",
     component: c6
+  },
+  {
+    path: "/about/",
+    component: c7
   },
   {
     name: "404",
     path: "/404/",
-    component: c7
+    component: c8
   },
   {
     name: "home",
     path: "/",
-    component: c8
+    component: c9
   },
   {
     name: "*",
     path: "*",
-    component: c7
+    component: c8
   }
 ]
