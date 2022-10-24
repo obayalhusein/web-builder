@@ -1,22 +1,41 @@
 <template>
   <v-app>
-      <v-app-bar class="px-16" absolute color="grey darken-4" elevate-on-scroll scroll-target="#scrolling-techniques-7">
-          <v-toolbar-title>
+      <v-app-bar app fixed color="grey darken-4" extension-height="64" elevation="4">
+          <v-toolbar-title class="ms-16 me-10">
               <g-link to="/dashboard">
-                  <img src="/makane-white.svg">
+                  <img src="/makane-white.svg" width="100">
               </g-link>
           </v-toolbar-title>
 
-          <v-btn to="/" color="white" class="ms-10" text>Products</v-btn>
-          <v-btn to="/" color="white" text>Orders</v-btn>
+          <v-btn dark text>Platform</v-btn>
+          <v-btn dark text>Products</v-btn>
+          <v-btn dark text>Orders</v-btn>
 
           <v-spacer></v-spacer>
           
-          <v-btn to="/" color="white" class="text-decoration-underline" text>batata.com</v-btn>
-          <v-btn to="/" color="white">Publish</v-btn>
+          <v-btn dark text>Notifcations</v-btn>
+          <v-btn dark text>Settings</v-btn>
+          <v-btn dark text class="me-16">Help</v-btn>
+
+          <template v-slot:extension class="px-0">
+            <v-container class="white px-16" fluid>
+              <div class="d-flex">
+                <div style="width: 200px">
+                  <v-select :items="items" label="Page" class="ms-10" hide-details dense outlined />
+                </div>
+                <v-btn text>M</v-btn>
+                <v-btn text>D</v-btn>
+
+                <v-spacer></v-spacer>
+
+                <v-btn to="/website" class="text-decoration-underline" text>batata.com</v-btn>
+                <v-btn to="/" color="grey darken-4" dark>Publish</v-btn>
+              </div>
+            </v-container>
+        </template>
       </v-app-bar>
 
-      <v-main id="scrolling-techniques-7" class="pt-16 grey lighten-3">
+      <v-main class="pt-16 mt-16 grey lighten-3">
           <slot />
       </v-main>
   </v-app>
@@ -25,5 +44,10 @@
 <script>
 export default {
   name: 'DashboardLayout',
+  data() {
+    return {
+      items: ['Foo', 'Bar', 'Fizz', 'Buzz'],
+    }
+  },
 }
 </script>

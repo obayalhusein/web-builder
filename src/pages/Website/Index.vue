@@ -1,11 +1,14 @@
 <template>
-    <div>
-        <h1>Homepage</h1>
-    </div>
+    <WebsiteLayout>
+        <Page />
+    </WebsiteLayout>
 </template>
 
 <script>
+import Page from '@/components/website/Page'
+
 export default {
-    name: 'Website'
+    name: 'Website',
+    components: { Page },
 }
 </script>

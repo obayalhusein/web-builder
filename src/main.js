@@ -6,6 +6,7 @@ import 'vuetify/dist/vuetify.min.css'
 import LandingLayout from '~/layouts/Landing.vue'
 import DashboardLayout from '~/layouts/Dashboard.vue'
 import MiddleLayout from '~/layouts/Middle.vue'
+import WebsiteLayout from '~/layouts/Website.vue'
 import '/node_modules/@fortawesome/fontawesome-free/css/all.css'
 import '~/assets/scss/app.scss'
 
@@ -24,4 +25,5 @@ export default function (Vue, { router, appOptions, head, isClient }) {
   Vue.component('LandingLayout', LandingLayout)
   Vue.component('DashboardLayout', DashboardLayout)
   Vue.component('MiddleLayout', MiddleLayout)
+  Vue.component('WebsiteLayout', WebsiteLayout)
 }
