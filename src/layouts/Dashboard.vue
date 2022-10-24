@@ -1,22 +1,22 @@
 <template>
   <v-app>
-      <v-app-bar class="px-16" absolute color="white" elevate-on-scroll scroll-target="#scrolling-techniques-7">
+      <v-app-bar class="px-16" absolute color="grey darken-4" elevate-on-scroll scroll-target="#scrolling-techniques-7">
           <v-toolbar-title>
               <g-link to="/dashboard">
-                  <img src="/makane.svg">
+                  <img src="/makane-white.svg">
               </g-link>
           </v-toolbar-title>
 
-          <v-btn text to="/" class="ms-10">Products</v-btn>
-          <v-btn text to="/">Orders</v-btn>
+          <v-btn to="/" color="white" class="ms-10" text>Products</v-btn>
+          <v-btn to="/" color="white" text>Orders</v-btn>
 
           <v-spacer></v-spacer>
           
-          <v-btn to="/" class="text-decoration-underline" text>batata.com</v-btn>
-          <v-btn to="/" color="deep-purple accent-3" class="white--text">Publish</v-btn>
+          <v-btn to="/" color="white" class="text-decoration-underline" text>batata.com</v-btn>
+          <v-btn to="/" color="white">Publish</v-btn>
       </v-app-bar>
 
-      <v-main id="scrolling-techniques-7" class="pt-16">
+      <v-main id="scrolling-techniques-7" class="pt-16 grey lighten-3">
           <slot />
       </v-main>
   </v-app>

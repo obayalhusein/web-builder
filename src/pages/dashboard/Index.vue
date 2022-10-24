@@ -1,6 +1,8 @@
 <template>
     <DashboardLayout>
-        <h1>Dashboard</h1>
+        <v-container class="white my-10">
+            <h1>Dashboard</h1>
+        </v-container>
     </DashboardLayout>
 </template>
 
